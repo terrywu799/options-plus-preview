@@ -883,13 +883,13 @@ function ActionCard({name,apps,steps,tag,accent,enabled,onToggle,onEdit,shortcut
   const stop=e=>e.stopPropagation();
   return(
     <div onMouseEnter={()=>setHov(true)} onMouseLeave={()=>setHov(false)} style={{
-      background:'#000',border:'1px solid rgba(255,255,255,0.1)',borderRadius:6,overflow:'hidden',
+      background:'#000',border:'1px solid rgba(255,255,255,0.1)',borderRadius:10,overflow:'hidden',
       display:'flex',flexDirection:'column',height:'100%',
       boxShadow:hov
-        ?'4px 10px 48px rgba(0,0,0,.6), 0 2px 6px rgba(0,0,0,.5)'
+        ?'4px 10px 58px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.5)'
         :'4px 8px 40px rgba(0,0,0,.5)',
       transition:'box-shadow .15s, transform .15s',
-      transform:hov?'translateY(-1px)':'none'}}>
+      transform:hov?'translateY(-5px)':'none'}}>
       {/* Main content (clickable) */}
       <div onClick={onEdit} style={{padding:'20px 24px 24px',display:'flex',flexDirection:'column',gap:16,cursor:'pointer',flex:1}}>
         {/* App icons */}
